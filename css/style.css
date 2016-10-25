@@ -1,0 +1,261 @@
+/* Sylwia's Style Sheet */
+/* Web Fonts ----------*/
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirLTStd-Heavy.otf');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/Myriad-Pro_31655.ttf');
+}
+
+@font-face {
+    font-family: 'Gyre';
+    src: url('../fonts/texgyreadventor-bold.otf');
+}
+
+/* Base Styles ---------*/
+
+body {
+    background-color: #6ec4f1;
+    margin: 0;
+    overflow-x: hidden !important;
+    padding: 0 2em 8em 2em;
+}
+
+p {
+    font-family: "Myriad Pro";
+    font-size: 14px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/*========Header==========*/
+
+.blue-wrapper {
+    position: relative;
+    padding: 1em 2em 1em 2em;
+    background-color: #3999cc;
+    margin-top: 0;
+    background: repeating-linear-gradient(135deg, 
+        #3987b0, #3987b0 .015em, #3999cc 0, #3999cc .25em);
+}
+
+.white-wrapper {
+    background-color: #fff;
+    padding: 1em 0.5em 1em 0.5em;
+}
+
+#header img {
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 0px !important;
+    display: block;
+}
+
+h1 {
+    position: absolute;
+    display: block;
+    max-width: 310px;
+    z-index: 100;
+    top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    font-family: 'Gyre';
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'Myriad Pro';
+    color: #488eb6;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+}
+
+/* List */
+
+#features {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+ul {
+    -webkit-appearance: none;
+    list-style: none;
+    background-repeat: no-repeat;
+    display: inline;
+
+}
+
+li {
+    background-repeat: no-repeat;
+    list-style: none;
+    padding: 0em 0.5em 1em 0.5em;
+    font-family: 'Myriad Pro';
+    font-size: 14px;
+}
+
+.input-content {
+    position: abolute;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+    margin: 1rem 0em;
+    padding: 1em 1em;
+    border-radius: 0.28571429rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+}
+
+input, textarea, fieldset {-webkit-appearance: none; !important; }
+:-webkit-autofill { color: #fff !important; }
+
+input[type=text], select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-shadow: inset 0 0 4px #000000;
+   -webkit-box-shadow: inset 0 0 4px #000000;
+   box-shadow: inset 0 0 4px #000000;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+     -moz-box-shadow: inset 0 0 4px #000000 !important;
+   -webkit-box-shadow: inset 0 0 4px #000000 !important;
+   box-shadow: inset 0 0 4px #000000 !important;
+}
+
+label {
+    text-transform: uppercase;
+    font-family: 'Avenir';
+}
+
+-moz-placeholder {
+    font-family: 'Avenir';
+}
+
+-webkit-placeholder {
+    font-family: 'Avenir';
+}
+
+.form-column {
+    position: relative;
+    display: inline-block;
+    padding: 1em 0em 1em 0em;
+    vertical-align: top;
+    background: repeating-linear-gradient(135deg, 
+        #cfcfcf, #cfcfcf .015em, white 0, white .25em);
+}
+
+.more-info-link {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+/* Banner Slogans */
+
+.upper-slogan {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-family: 'Avenir';
+    font-size: 22px;
+}
+
+.lightblue-banner {
+    background-color: #6ec4f1;
+    padding: 1em 1em;
+}
+
+.lower-slogan {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-family: 'Myriad Pro';
+    font-size: 24px;
+}
+
+.darkblue-banner {
+    background-color: #3999cc;
+    padding: 1em 2em;
+}
+
+.icon {
+   font-size: 10px; 
+    vertical-align: middle;
+    padding: 1em 1em 1em 1em;
+}
+
+.offers-check {
+    font-family: 'Myriad Pro';
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Submit Button ------*/
+
+.button-submit {
+    background-color: #3999cc;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0px 2px 2px 0 rgba(34, 36, 38, 0.15);
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Avenir';
+}
+
+.button-submit:hover {
+    background-color: #6ec4f1;
+}
+
+/*=============Responsive Grid====================*/
+
+@media screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+      #header img {
+          align-content: center;
+          position: relative;
+          display:table;
+      }
+      h1 {
+          max-width: 768px;
+          font-size: 60px;
+      }
+}
