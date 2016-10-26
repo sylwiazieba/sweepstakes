@@ -16,11 +16,16 @@
 <body width="device-width">
     <section>
         <div id="header">
+           <div class="container center">
+           <div class="row">
             <img src="images/resort.jpg" alt="Exclusive Resort for Sweepstakes" class=".img-responsive" />
-            <h1 class="header-title">Win a vacation<br>at this exclusive resort</h1>
+            <h1>Win a vacation<br>at this exclusive resort</h1>
+        </div>
+        </div>
         </div>
 
-        <div class="blue-wrapper gradient">
+        <div class="blue-wrapper container">
+           <div class="row">
             <div class="white-wrapper">
                 <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat tortor ex, et ornare augue laoreet ac. Sed non ligula arcu. Phasellus pellentesque, lorem in bibendum facilisis, tellus elit porta odio, in commodo lorem dolor vitae neque. Vivamus gravida tincidunt consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis at neque a lacus vulputate bibendum. Pellentesque a tellus molestie, bibendum quam nec, cursus nulla. Duis a mauris ut felis porta sollicitudin at id odio. Etiam at ex orci.</p>
 
@@ -49,41 +54,40 @@
                 <div class="darkblue-banner">
                     <h2 class="lower-slogan">Enter here for a chance to win!</h2>
                 </div>
-
-                <div class="form-column container">
-                    <div class="container">
-                        <form id="register-form">
-                            <div class="col-sm-6 col-md-6 col-lg-6">
-
-                                <label for="fname">First Name</label>
-                                <input type="text" id="fname" name="firstName" required>
-
-
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-
-                                <label for="zip">Zip Code</label>
-                                <input type="text" id="zip" name="zipcode" required>
-                            </div>
-
-                            <div class="far-column col-sm-6 col-md-6 col-lg-6">
-                                <label for="lname">Last Name</label>
-                                <input type="text" id="lname" name="lastname" required>
-
-                                <label for="dob">Date of Birth</label>
-                                <input type="text" id="dob" name="birthdate" placeholder="MM/DD/YYYY" required>
-
-                                <label for="provider">Cable/Satellite Provider</label>
-                                <select id="provider" name="provider" required>
-                                    <option value=""></option>
-                                    <option value="1">Time Warner</option>
-                                    <option value="2">DIRECTV</option>
-                                    <option value="3">Dish Network</option>
+                
+                <div class="container form-column">
+  <form id="register-form" class="form-inline">
+               <div class="form-group two-col">
+       <label for="firstname">First Name</label>
+       <input type="text" class="form-control" name="firstName">
+     </div>
+     <div class="form-group two-col">
+       <label for="lastname">Last Name</label>
+       <input type="text" class="form-control" name="lastName">
+     </div>
+               <div class="form-group two-col">
+       <label for="email">Email</label>
+       <input type="email" class="form-control" name="email">
+     </div>
+     <div class="form-group two-col">
+       <label for="dob">Date of Birth</label>
+       <input type="text" class="form-control" name="birth" placeholder="MM/DD/YYYY">
+     </div>
+                   <div class="form-group two-col">
+       <label for="zipcode">Zip Code</label>
+       <input type="text" class="form-control" name="zip">
+     </div>
+                   <div class="form-group two-col btn-group">
+       <label for="provider">Cable/Satellite Provider</label>
+        <select id="provider" name="provider" required>
+              <option value=""></option>
+             <option value="1">Time Warner</option>
+             <option value="2">DIRECTV</option>
+                 <option value="3">Dish Network</option>
                                 </select>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                 </div>
+                    </form>
+                </div>  
 
                 <div class="offers-check">
                     <input type="checkbox" id="specialOffers" value="yes" /> Yes, I would like to receive news and special offers from the resort!
@@ -97,6 +101,7 @@
                 <p class="text-center text-white">*Winners must be able to travel during the Grand Opening of the resort and will be notified October 2015 of the exact dates of travel.</p>
                 <p class="text-center text-white">Curabitur urna tortor, efficitur in rutrum vestibulum, pretium non enim. Vestibulum orci ante, tincidunt ac vestibulum a, rhoncus vitae ex. Proin aliquet nunc orci, efficitur euismod purus pellentesque eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a aliquet magna. Aliquam vel mauris ut est suscipit lacinia vitae in tortor. Integer dignissim metus sed diam blandit cursus.</p>
             </footer>
+        </div>
         </div>
     </section>
 

@@ -23,7 +23,6 @@
 
 body {
     background-color: #6ec4f1 !important;
-    margin: 0;
     overflow-x: hidden !important;
     padding: 0 2em 8em 2em;
 }
@@ -50,35 +49,42 @@ p {
     background-color: #3999cc;
     margin-top: 0;
     background: repeating-linear-gradient(135deg, #3987b0, #3987b0 .015em, #3999cc 0, #3999cc .25em);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .white-wrapper {
     background-color: #fff;
     padding: 1em 0.5em 1em 0.5em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 #header img {
     max-width: 100% !important;
     height: auto !important;
     margin-bottom: 0px !important;
+    margin-right: -5em !important;
+    float: none !important;
     display: block !important;
 }
 
 h1 {
-    position: absolute;
-    display: block;
-    max-width: 310px;
-    z-index: 100;
+    position: absolute !important;
+    display: block !important;
+    max-width: auto !important;
+    z-index: 100 !important;
     top: 5px;
     text-align: center;
     text-transform: uppercase;
     color: #fff !important;
-    font-size: 20px;
+    font-size: 24px !important;
     -webkit-appearance: none;
     -webkit-appearance: none;
     font-family: 'Gyre' !important;
     font-weight: normal;
     margin-top: 0;
+    margin-left: 3.5em !important;
 }
 
 h3 {
@@ -172,17 +178,35 @@ label {
 
 .form-column {
     position: relative;
-    display: block;
+    display: inline-block;
     padding: 1em 0em 1em 0em;
     vertical-align: top;
+    max-width: 100%;
     background: repeating-linear-gradient(135deg, #cfcfcf, #cfcfcf .015em, white 0, white .25em);
+}
+
+.form-inline .form-group input {
+	width:100%;
+}
+.form-group { 
+  float: left;
+} 
+.form-group:last-child{
+  padding-right: 0%;
+}
+.one-col{
+  width: 100%;
+  padding: 10px;
+}
+.two-col{
+  width: 50%;
+  padding: 10px;
 }
 
 .more-info-link {
     margin-top: 0;
     font-size: 12px;
 }
-
 
 /* Banner Slogans */
 
@@ -252,17 +276,17 @@ label {
 
 /*=============Responsive Styles====================*/
 
-@media (min-width:768px) and (max-width:1281px) {
+@media (min-width:768px) {
     #header img {
         align-content: center;
-        margin-left: 10em !important;
+        margin-left: 12.5em !important;
         background-attachment: fixed;
         background-position: center center;
     }
     h1 {
         max-width: 768px !important;
         font-size: 50px !important;
-        margin-left: 6em !important;
+        margin-left: 6.5em !important;
         text-align: center !important;
         font-weight: 100 !important;
     }
@@ -277,9 +301,9 @@ label {
         margin-left: 10em;
     }
     .white-wrapper {
-        margin-top: -0.5em;
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+        margin-top: -0.5em !important;
+        margin-left: 1.5em !important;
+        margin-right: 1.5em !important;
     }
     .lightblue-banner {
         margin-left: -0.25em;
@@ -320,7 +344,6 @@ label {
     }
     .form-column {
         margin-top: 2em;
-        max-width: 830px;
     }
     .far-column {
         margin-left: -12em;
@@ -346,5 +369,22 @@ label {
         padding-left: 5em;
         padding-right: 5em;
         padding-top: 1em;
+    }
+}
+
+@media (min-width : 1281px) {
+    .fine-print {
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-top: 1em;
+    }
+    .blue-wrapper {
+        width: 947px !important;
+        margin-left: 10em;
+    }
+   .white-wrapper {
+        margin-top: -0.5em !important;
+        margin-left: 5em !important;
+        margin-right: 5em !important;
     }
 }
