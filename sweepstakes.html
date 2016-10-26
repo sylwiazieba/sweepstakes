@@ -25,8 +25,9 @@
         </div>-->
 
         <div class="blue-wrapper container">
-            <div class="header"></div>
+            <div class="header">
             <h1>Win a vacation<br>at this exclusive resort</h1>
+            </div>
         
            <div class="row">
             <div class="white-wrapper">
@@ -59,7 +60,7 @@
                 </div>
                 
                 <div class="container form-column">
-  <form id="register-form" class="form-inline">
+  <form id="register-form" class="form-inline" method='post' action='sweepstakes.html'>
                <div class="form-group two-col">
        <label for="firstname">First Name</label>
        <input type="text" class="form-control" name="firstName">
@@ -82,22 +83,24 @@
      </div>
                    <div class="form-group two-col btn-group">
        <label for="provider">Cable/Satellite Provider</label>
-        <select id="provider" name="provider" required>
+        <select id="provider" name="provider" class="form-control-lg" required>
               <option value=""></option>
              <option value="1">Time Warner</option>
              <option value="2">DIRECTV</option>
                  <option value="3">Dish Network</option>
                                 </select>
                  </div>
-                    </form>
                 </div>  
-
-                <div class="offers-check">
-                    <input type="checkbox" id="specialOffers" value="yes" /> Yes, I would like to receive news and special offers from the resort!
+                <div class="offers-check form-group col-md-12">
+                   <div class="checkbox">
+                    <label>
+                    <input type="checkbox" class="form-check-input" id="specialOffers" name="terms" value="yes" /> Yes, I would like to receive news and special offers from the resort!</label>
                     <a class="privacy" href>PRIVACY POLICY</a>
                 </div>
+                    </div>
 
                 <input class="button-submit" id="submit-button" type="submit" value="Submit">
+                    </form>
             </div>
             <!----- Close whiteBox -------->
             <footer class="fine-print">
