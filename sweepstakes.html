@@ -13,14 +13,14 @@
 
 </head>
 
-<body width="device-width">
+<body>
     <section>
-        <div id="header">
-           <div class="container center">
+       <div class="container">
            <div class="row">
-            <img src="images/resort.jpg" alt="Exclusive Resort for Sweepstakes" class=".img-responsive" />
-            <h1>Win a vacation<br>at this exclusive resort</h1>
-        </div>
+        <div id="header" class="container">
+           <div class="row">
+            <img src="images/resort.jpg" alt="Exclusive Resort for Sweepstakes" class="" />
+            <h1 class="center header-title col-sm-6 col-md-6 col-lg-12">Win a vacation<br>at this exclusive resort</h1>
         </div>
         </div>
 
@@ -48,8 +48,8 @@
                             <li><img src="icons/Grill%20&%20Brew.png" class="icon" alt="Icon of beer" />Plus, you'll attend the Grand Opening of the Sports Grill*</li>
                         </ul>
                     </div>
-                    <div class="more-info-link">
-                        <h3 class="text-center">For more information on universal orlando resort and for great deals on vacation packages, visit <a href>vacationpackages.com!</a></h3></div>
+                    <div>
+                        <h3 class="text-center more-info-link">For more information on universal orlando resort and for great deals on vacation packages, visit <a href>vacationpackages.com!</a></h3></div>
 
                     <div class="darkblue-banner">
                         <h2 class="lower-slogan">Enter here for a chance to win!</h2>
@@ -79,7 +79,7 @@
                             </div>
                             <div class="form-group two-col btn-group">
                                 <label for="provider">Cable/Satellite Provider</label>
-                                <select id="provider" name="provider" class="form-control-lg" required>
+                                <select id="provider" name="provider" class="form-control-lg" type="dropdown">
                                     <option value=""></option>
                                     <option value="1">Time Warner</option>
                                     <option value="2">DIRECTV</option>
@@ -87,6 +87,7 @@
                                 </select>
                             </div>
                     </div>
+                    
                     <div class="offers-check form-group col-md-12">
                         <div class="checkbox">
                             <label>
@@ -94,17 +95,21 @@
                             <a class="privacy" href>PRIVACY POLICY</a>
                         </div>
                     </div>
-
+                    <div>
                     <input class="button-submit" id="submit-button" type="submit" value="Submit">
+                        </div>
+                    
                     </form>
-                </div>
-                <!----- Close whiteBox -------->
-                <footer class="fine-print">
+                </div> <!----- Close white-wrapper -------->
+                
+                   <div id="footer" class="fine-print">
                     <p class="text-center text-white">*Winners must be able to travel during the Grand Opening of the resort and will be notified October 2015 of the exact dates of travel.</p>
                     <p class="text-center text-white">Curabitur urna tortor, efficitur in rutrum vestibulum, pretium non enim. Vestibulum orci ante, tincidunt ac vestibulum a, rhoncus vitae ex. Proin aliquet nunc orci, efficitur euismod purus pellentesque eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a aliquet magna. Aliquam vel mauris ut est suscipit lacinia vitae in tortor. Integer dignissim metus sed diam blandit cursus.</p>
-                </footer>
-            </div>
-        </div>
+                </div>
+            </div> <!----- row --------->
+        </div> <!----- Close blue-wrapper ------->
+        </div> <!----- row ---->
+        </div> <!----- container ---->
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

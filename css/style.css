@@ -23,14 +23,14 @@
 
 .container {
     margin: 0 auto !important;
-    max-width: 1280px !important;
-    width: 90% !important;
+    max-width: 847px !important;
+    max-width: 90% !important;
 }
 
 body {
     background-color: #6ec4f1 !important;
     overflow-x: hidden !important;
-    padding: 0 2em 8em 2em;
+    margin: 0;
 }
 
 p {
@@ -51,13 +51,13 @@ p {
 
 .blue-wrapper {
     position: relative;
-    padding: 1em 2em 1em 2em;
+    padding: 1em 2em 1em 5em;
+    margin-bottom: 20em !important;
     background-color: #3999cc;
     margin-top: 0;
     background: repeating-linear-gradient(135deg, #3987b0, #3987b0 .015em, #3999cc 0, #3999cc .25em);
     margin-left: auto;
     margin-right: auto;
-    max-width: 947px !important;
 }
 
 .white-wrapper {
@@ -67,51 +67,30 @@ p {
     margin-right: 2em;
 }
 
+
 /* Header -----------------*/
 
 #header img {
     max-width: 100% !important;
     height: auto !important;
     margin-bottom: 0px !important;
-    margin-right: -5em !important;
-    float: none !important;
+    text-align: center;
     display: block !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/*.header {
-    background:url(../images/resort.jpg);
-    background-size: 100% auto !important;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-    height: auto;
-    max-width: auto;
-    z-index: 1;
-    background-repeat: no-repeat;
-    margin-top: 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    min-height: 519px;
-    z-index: 900;
-    display: flex;
-}*/
-
-h1 {
+.header-title {
     position: absolute !important;
-    display: block !important;
-    max-width: auto !important;
-    z-index: 100 !important;
-    top: 5px;
-    text-align: center !important;
+    top: 1px;
+    text-align: center;
     text-transform: uppercase;
     color: #fff !important;
-    font-size: 24px !important;
+    font-size: 22px !important;
     -webkit-appearance: none;
     -webkit-appearance: none;
     font-family: 'Gyre' !important;
     font-weight: normal;
-    margin-top: 0;
-    margin-left: 4em !important;
 }
 
 h3 {
@@ -123,7 +102,7 @@ h3 {
 }
 
 
-/* List */
+/* List --------------------------*/
 
 #features {
     margin: 0;
@@ -153,8 +132,11 @@ li {
 
 .more-info-link {
     margin-top: 0;
-    font-size: 12px;
+    font-size: 8px !important;
+    margin-left: 2em;
+    margin-right: 2em;
 }
+
 
 /* Form ---------------------*/
 
@@ -175,6 +157,20 @@ select {
 input[type=email],
 select {
     width: 25em;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-shadow: inset 0 0 4px #000000 !important;
+    -webkit-box-shadow: inset 0 0 4px #000000 !important;
+    box-shadow: inset 0 0 4px #000000 !important;
+}
+
+input[type="dropdown"],
+select {
+    width: 8em;
     padding: 10px 20px;
     margin: 8px 0;
     display: block;
@@ -207,29 +203,33 @@ label {
 
 .form-column {
     position: relative;
-    display: inline-block;
-    padding: 1em 0em 1em 0em;
+    display: block;
     vertical-align: top;
     max-width: 100%;
     background: repeating-linear-gradient(135deg, #cfcfcf, #cfcfcf .015em, white 0, white .25em);
+    margin-top: 2em !important;
 }
 
 .form-inline .form-group input {
-	width:100%;
+    width: 100%;
 }
-.form-group { 
-  float: left;
-} 
-.form-group:last-child{
-  padding-right: 0%;
+
+.form-group {
+    float: left;
 }
-.one-col{
-  width: 100%;
-  padding: 10px;
+
+.form-group:last-child {
+    padding-right: 0%;
 }
-.two-col{
-  width: 50%;
-  padding: 10px;
+
+.one-col {
+    width: 100%;
+    padding: 10px;
+}
+
+.two-col {
+    width: 50%;
+    padding: 10px;
 }
 
 .offers-check {
@@ -237,6 +237,7 @@ label {
     font-size: 10px;
     font-weight: bold;
 }
+
 
 /* Banner Slogans ------------------------*/
 
@@ -266,6 +267,7 @@ label {
     padding: 1em 2em;
 }
 
+
 /* Submit Button ----------------*/
 
 .button-submit {
@@ -290,145 +292,503 @@ label {
     background-color: #6ec4f1;
 }
 
+.fine-print {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+}
+
 
 /* Responsive Styles ---------------------*/
 
-@media (min-width:768px) {
-    #header {
-        align-content: center;
-        margin-left: 23.5em !important;
-        background-attachment: fixed;
-        background-position: center center;
+@media only screen and (min-width: 320px) {
+    .header-title {
+        font-size: 22px !important;
+        margin-left: -1em !important;
+        width: 400px !important;
+        margin-top: 5px;
+        left: 50%:
     }
-    h1 {
-        max-width: 768px !important;
-        font-size: 50px !important;
-        text-align: center !important;
-        font-weight: 100 !important;
+    .more-info-link {
+        margin-top: 0;
+        font-size: 12px !important;
+        margin-left: 3em;
+        margin-right: 3em;
+        font-weight: bold;
+        padding-bottom: 1em;
     }
     p {
         padding-left: 1em !important;
         padding-right: 1em !important;
         padding-bottom: 1em;
-        font-size: 18px !important;
+        font-size: 14px !important;
     }
-    .blue-wrapper {
-        width: 947px !important;
-        margin-left: 9m;
+    input[type="dropdown"],
+    select {
+        width: 7em !important;
+    }
+    input[type="dropdown"],
+    label {
+        margin-top: -1em;
+    }
+    .button-submit {
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+    .offers-check {
+        padding: 2em;
+        font-size: 10px;
+    }
+    input[type="checkbox"] {
+        float: left;
+        margin: 0 !important;
+        position: relative !important;
+        padding: 1em !important;
+    }
+    .privacy {
+        clear: left;
+        display: block;
+        margin-left: 2em;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .header-title {
+        font-size: 24px !important;
+        margin-left: 1em !important;
+        width: 400px !important;
+        margin-top: 5px;
+        left: 50%:
+    }
+    input[type="dropdown"],
+    select {
+        width: 8em !important;
     }
     .white-wrapper {
-        margin-top: -0.5em !important;
-        margin-left: 1.5em !important;
-        margin-right: 1.5em !important;
+        background-color: #fff;
+        padding: 1em 2em 1em 2em;
+        margin-left: 3em;
+        margin-right: 3em;
     }
     .lightblue-banner {
-        margin-left: -0.25em;
-        margin-right: -0.25em;
+        margin-left: -1.5em;
+        margin-right: -1.5em;
+    }
+    .darkblue-banner {
+        margin-left: -1.5em;
+        margin-right: -1.5em;
+    }
+    .offers-check {
+        padding: 2em;
+        font-size: 12px;
+    }
+    input[type="checkbox"] {
+        float: left;
+        margin: 0 !important;
+        position: relative !important;
+        padding: 1em !important;
+    }
+    .privacy {
+        clear: left;
+        display: block;
+        margin-left: 2em;
+    }
+    .fine-print {
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-top: 1em;
+        font-size: 10px;
+    }
+    p {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+        padding-bottom: 1em;
+        font-size: 12px !important;
     }
     .upper-slogan {
-        font-size: 28px;
+        font-size: 16px;
         margin: 0;
-        letter-spacing: 1.5px;
+        text-align: center;
+        letter-spacing: 1px;
     }
     .features-list {
         padding-left: 1em;
         padding-right: 1em;
     }
     li {
-        font-size: 18px !important;
+        font-size: 12px !important;
     }
     .icon {
         padding-right: 3em;
     }
-    h3 {
-        font-size: 14px !important;
-        padding-left: 10em !important;
-        padding-right: 10em !important;
-        padding-bottom: 2em !important;
-        margin-top: 0 !important;
+    .form-column {
+        margin-top: 2em;
+    }
+    .more-info-link {
+        margin-top: 0;
+        font-size: 8px !important;
+        margin-left: 2em;
+        margin-right: 2em;
+        font-weight: bold;
+        padding-bottom: 1em;
+        line-height: 18px;
+    }
+    .button-submit {
+        margin-left: 2em;
+        margin-top: 1em;
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    .header-title {
+        font-size: 26px !important;
+        margin-left: 2em !important;
+        width: 400px !important;
+        margin-top: 5px;
+        left: 50%:
+    }
+    input[type="dropdown"],
+    select {
+        width: 10em !important;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .header-title {
+        font-size: 36px !important;
+        margin-left: 1em !important;
+        width: 500px !important;
+        margin-top: 5px;
+    }
+    input[type="dropdown"],
+    select {
+        width: 12em !important;
+    }
+    .white-wrapper {
+        background-color: #fff;
+        padding: 1em 2em 1em 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .lightblue-banner {
+        margin-left: -1.5em;
+        margin-right: -1.5em;
     }
     .darkblue-banner {
-        margin-left: -0.25em;
-        margin-right: -0.25em;
+        margin-left: -1.5em;
+        margin-right: -1.5em;
+    }
+    .offers-check {
+        padding: 2em;
+        font-size: 12px;
+    }
+    input[type="checkbox"] {
+        float: left;
+        margin: 0 !important;
+        position: relative !important;
+        padding: 1em !important;
+    }
+    .privacy {
+        clear: left;
+        display: block;
+        margin-left: 2em;
+    }
+    .fine-print {
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-top: 1em;
+        font-size: 10px;
+    }
+    p {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+        padding-bottom: 1em;
+        font-size: 12px !important;
+    }
+    .upper-slogan {
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .features-list {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    li {
+        font-size: 12px !important;
+    }
+    .icon {
+        padding-right: 3em;
     }
     .lower-slogan {
-        font-size: 34px;
+        font-size: 22px;
         margin: 0;
         padding: 0.5em 0.5em;
         letter-spacing: 1px;
         font-weight: 200;
     }
     .form-column {
-        margin-top: 2em;
+        margin-top: 2em !important;
     }
-    .far-column {
-        margin-left: -12em;
-    }
-    #provider {
-        margin-top: 8px;
-    }
-    .offers-check {
-        padding: 2em;
-        font-size: 12px;
-    }
-    .privacy {
-        clear: left;
-        display: block;
-        margin-left: 2em;
+    .more-info-link {
+        margin-top: 0;
+        font-size: 10px !important;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+        font-weight: bold;
+        padding-bottom: 1em;
+        line-height: 18px;
     }
     .button-submit {
-        width: 25%;
         margin-left: 2em;
-        margin-top: 2em;
-    }
-    .fine-print {
-        padding-left: 5em;
-        padding-right: 5em;
-        padding-top: 1em;
+        margin-top: 1em;
+        width: 35%;
     }
 }
 
-
-@media (min-width : 375px) {
-     .form-column {
-        margin-top: 2em;
-         max-width: 100%;
+@media only screen and (min-width: 768px) {
+    .header-title {
+        font-size: 40px !important;
+        width: 600px !important;
+        margin-top: 5px;
+        left: 50%:
     }
-    .fine-print {
-        padding-left: 3em;
-        padding-right: 3em;
-        padding-top: 1em;
+    input[type="dropdown"],
+    select {
+        width: 14.5em !important;
     }
-    h1 {
-        max-width: 375px !important;
-        font-size: 20px !important;
-        text-align: center !important;
-        font-weight: 100 !important;
-        margin-bottom: 2.5em !important;
-        margin-left: 1.25em !important;
-    }
-    h3 {
-        font-size: 10px !important;
-        padding-left: 4em !important;
-        padding-right: 4em !important;
-        padding-bottom: 2em !important;
-        margin-top: 0 !important;
-    }
-  p {
+    p {
         padding-left: 1em !important;
         padding-right: 1em !important;
         padding-bottom: 1em;
+        font-size: 14px !important;
+    }
+    .upper-slogan {
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .features-list {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    li {
+        font-size: 14px !important;
+    }
+    .icon {
+        padding-right: 3em;
+    }
+    .lower-slogan {
+        font-size: 26px;
+        margin: 0;
+        padding: 0.5em 0.5em;
+        letter-spacing: 1px;
+        font-weight: 200;
+    }
+    .form-column {
+        margin-top: 2em !important;
+    }
+    .more-info-link {
+        margin-top: 0;
         font-size: 12px !important;
+        margin-left: 3em;
+        margin-right: 3em;
+        font-weight: bold;
+        padding-bottom: 1em;
+        line-height: 18px;
+    }
+    .button-submit {
+        margin-left: 2em;
+        margin-top: 1em;
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .header-title {
+        font-size: 44px !important;
+        width: 600px !important;
+        margin-left: 2em !important;
+        margin-top: 5px;
+    }
+    input[type="dropdown"],
+    select {
+        width: 15em !important;
+    }
+    p {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+        padding-bottom: 1em;
+        font-size: 16px !important;
+    }
+    .blue-wrapper {
+        width: 947px !important;
+    }
+    .upper-slogan {
+        font-size: 26px;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .features-list {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    li {
+        font-size: 16px !important;
+    }
+    .icon {
+        padding-right: 3em;
+    }
+    .lower-slogan {
+        font-size: 32px;
+        margin: 0;
+        padding: 0.5em 0.5em;
+        letter-spacing: 1px;
+        font-weight: 200;
+    }
+    .form-column {
+        margin-top: 2em !important;
+    }
+    .more-info-link {
+        margin-top: 0;
+        font-size: 14px !important;
+        margin-left: 4em;
+        margin-right: 4em;
+        font-weight: bold;
+        padding-bottom: 1em;
+        line-height: 18px;
     }
     .button-submit {
         margin-left: 2em;
         margin-top: 2em;
+        width: 35%;
     }
-    .privacy {
-        clear: left;
-        display: block;
-        margin-left: 2em;
-    }
-    
 }
+
+@media only screen and (min-width: 1025px) {
+    .header-title {
+        font-size: 48px !important;
+        width: 700px !important;
+        margin-left: 2em !important;
+        margin-top: 5px;
+    }
+    input[type="dropdown"],
+    select {
+        width: 21em !important;
+    }
+    .blue-wrapper {
+        width: 947px !important;
+    }
+    p {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+        padding-bottom: 1em;
+        font-size: 16px !important;
+    }
+    .upper-slogan {
+        font-size: 28px;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .features-list {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    li {
+        font-size: 16px !important;
+    }
+    .icon {
+        padding-right: 3em;
+    }
+    .lower-slogan {
+        font-size: 36px;
+        margin: 0;
+        padding: 0.5em 0.5em;
+        letter-spacing: 1px;
+        font-weight: 200;
+    }
+    .form-column {
+        margin-top: 4em !important;
+    }
+    .more-info-link {
+        margin-top: 0;
+        font-size: 14px !important;
+        margin-left: 9em;
+        margin-right: 9em;
+        font-weight: bold;
+        padding-bottom: 1em;
+        line-height: 18px;
+    }
+    .button-submit {
+        margin-left: 2em;
+        margin-top: 2em;
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    .header-title {
+        font-size: 54px !important;
+        width: 700px !important;
+        margin-left: 3em !important;
+        margin-top: 5px;
+    }
+    p {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+        padding-bottom: 1em;
+        font-size: 16px !important;
+    }
+    input[type="dropdown"],
+    select {
+        width: 24em !important;
+    }
+    .blue-wrapper {
+        width: 947px !important;
+    }
+    .upper-slogan {
+        font-size: 28px;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .features-list {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    li {
+        font-size: 16px !important;
+    }
+    .icon {
+        padding-right: 3em;
+    }
+    .lower-slogan {
+        font-size: 36px;
+        margin: 0;
+        padding: 0.5em 0.5em;
+        letter-spacing: 1px;
+        font-weight: 200;
+    }
+    .form-column {
+        margin-top: 4em !important;
+    }
+    .more-info-link {
+        margin-top: 0;
+        font-size: 14px !important;
+        margin-left: 9em;
+        margin-right: 9em;
+        font-weight: bold;
+        padding-bottom: 1em;
+        line-height: 18px;
+    }
+    .button-submit {
+        margin-left: 2em;
+        margin-top: 2em;
+        width: 35%;
+    }
 }

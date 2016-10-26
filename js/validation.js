@@ -42,9 +42,6 @@ $(function() {
              provider: {
                  required: true,
              },
-             terms: {
-                 required: true,
-             }
         },
         messages: {
             firstName: {
@@ -65,9 +62,6 @@ $(function() {
             },
             provider: {
                 required: 'Please choose a provider',
-            },
-            terms: {
-                required: 'Please check the box',
             },
         }
     });
