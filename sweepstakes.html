@@ -3,19 +3,21 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Sweepstakes</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
 
 <body width="device-width">
     <section>
         <div id="header">
-            <img src="images/resort.jpg" alt="Exclusive Resort for Sweepstakes" />
-            <h1 class="header-title">Win a vacation at this exclusive resort</h1>
+            <img src="images/resort.jpg" alt="Exclusive Resort for Sweepstakes" class=".img-responsive" />
+            <h1 class="header-title">Win a vacation<br>at this exclusive resort</h1>
         </div>
 
         <div class="blue-wrapper gradient">
@@ -48,43 +50,50 @@
                     <h2 class="lower-slogan">Enter here for a chance to win!</h2>
                 </div>
 
-                <div class="form-column">
-                    <form id="register-form">
-                       <div>
-                        <label for="fname">First Name</label>
-                           <input type="text" id="fname" name="firstName" required></div>
+                <div class="form-column container">
+                    <div class="container">
+                        <form id="register-form">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
 
-                       <div><label for="lname">Last Name</label>
-                           <input type="text" id="lname" name="lastname" required></div>
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="firstName" required>
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
 
-                        <label for="dob">Date of Birth</label>
-                        <input type="text" id="dob" name="birthdate" placeholder="MM/DD/YYYY" required>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
 
-                        <label for="zip">Zip Code</label>
-                        <input type="text" id="zip" name="zipcode" required>
+                                <label for="zip">Zip Code</label>
+                                <input type="text" id="zip" name="zipcode" required>
+                            </div>
 
-                        <label for="provider">Cable/Satellite Provider</label>
-                        <select id="provider" name="provider" required>
-                            <option value=""></option>
-                            <option value="1">Time Warner</option>
-                            <option value="2">DIRECTV</option>
-                            <option value="3">Dish Network</option>
-                        </select>
-                    </form>
+                            <div class="far-column col-sm-6 col-md-6 col-lg-6">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lastname" required>
+
+                                <label for="dob">Date of Birth</label>
+                                <input type="text" id="dob" name="birthdate" placeholder="MM/DD/YYYY" required>
+
+                                <label for="provider">Cable/Satellite Provider</label>
+                                <select id="provider" name="provider" required>
+                                    <option value=""></option>
+                                    <option value="1">Time Warner</option>
+                                    <option value="2">DIRECTV</option>
+                                    <option value="3">Dish Network</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="offers-check">
                     <input type="checkbox" id="specialOffers" value="yes" /> Yes, I would like to receive news and special offers from the resort!
-                    <p><a href>PRIVACY POLICY</a></p>
+                    <a class="privacy" href>PRIVACY POLICY</a>
                 </div>
 
                 <input class="button-submit" id="submit-button" type="submit" value="Submit">
             </div>
             <!----- Close whiteBox -------->
-            <footer>
+            <footer class="fine-print">
                 <p class="text-center text-white">*Winners must be able to travel during the Grand Opening of the resort and will be notified October 2015 of the exact dates of travel.</p>
                 <p class="text-center text-white">Curabitur urna tortor, efficitur in rutrum vestibulum, pretium non enim. Vestibulum orci ante, tincidunt ac vestibulum a, rhoncus vitae ex. Proin aliquet nunc orci, efficitur euismod purus pellentesque eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a aliquet magna. Aliquam vel mauris ut est suscipit lacinia vitae in tortor. Integer dignissim metus sed diam blandit cursus.</p>
             </footer>
@@ -94,6 +103,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
     <script src="js/validation.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 
