@@ -47,7 +47,7 @@ p {
 }
 
 
-/*========Header==========*/
+/* Wrapper Containers ------------------*/
 
 .blue-wrapper {
     position: relative;
@@ -57,7 +57,7 @@ p {
     background: repeating-linear-gradient(135deg, #3987b0, #3987b0 .015em, #3999cc 0, #3999cc .25em);
     margin-left: auto;
     margin-right: auto;
-    width: 947px !important;
+    max-width: 947px !important;
 }
 
 .white-wrapper {
@@ -66,6 +66,8 @@ p {
     margin-left: 2em;
     margin-right: 2em;
 }
+
+/* Header -----------------*/
 
 #header img {
     max-width: 100% !important;
@@ -76,7 +78,7 @@ p {
     display: block !important;
 }
 
-.header {
+/*.header {
     background:url(../images/resort.jpg);
     background-size: 100% auto !important;
     -webkit-background-size: cover;
@@ -92,25 +94,7 @@ p {
     min-height: 519px;
     z-index: 900;
     display: flex;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-    #header {
-        background-image: url(../images/resort-mobile.jpg) !important;
-        max-width: 100% !important;
-    height: auto !important;
-    margin-bottom: 0px !important;
-    margin-right: -5em !important;
-    float: none !important;
-    display: block !important;
-    }
-    .screen-only {
-        display: none;
-    }
-    .mobile-only {
-        display: block;
-    }
-}
+}*/
 
 h1 {
     position: absolute !important;
@@ -127,7 +111,7 @@ h1 {
     font-family: 'Gyre' !important;
     font-weight: normal;
     margin-top: 0;
-    margin-left: 3em !important;
+    margin-left: 4em !important;
 }
 
 h3 {
@@ -160,6 +144,19 @@ li {
     font-family: 'Myriad Pro';
     font-size: 14px;
 }
+
+.icon {
+    font-size: 10px;
+    vertical-align: middle;
+    padding: 1em 1em 1em 1em;
+}
+
+.more-info-link {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+/* Form ---------------------*/
 
 input[type=text],
 select {
@@ -235,12 +232,13 @@ label {
   padding: 10px;
 }
 
-.more-info-link {
-    margin-top: 0;
-    font-size: 12px;
+.offers-check {
+    font-family: 'Myriad Pro';
+    font-size: 10px;
+    font-weight: bold;
 }
 
-/* Banner Slogans */
+/* Banner Slogans ------------------------*/
 
 .upper-slogan {
     text-transform: uppercase;
@@ -268,20 +266,7 @@ label {
     padding: 1em 2em;
 }
 
-.icon {
-    font-size: 10px;
-    vertical-align: middle;
-    padding: 1em 1em 1em 1em;
-}
-
-.offers-check {
-    font-family: 'Myriad Pro';
-    font-size: 10px;
-    font-weight: bold;
-}
-
-
-/* Submit Button ------*/
+/* Submit Button ----------------*/
 
 .button-submit {
     background-color: #3999cc;
@@ -306,16 +291,12 @@ label {
 }
 
 
-/*=============Responsive Styles====================*/
-@media (min-width:375px) {
-    #header {
-        max-width: 375px;
-    }
-    
+/* Responsive Styles ---------------------*/
+
 @media (min-width:768px) {
     #header {
         align-content: center;
-        margin-left: 12.5em !important;
+        margin-left: 23.5em !important;
         background-attachment: fixed;
         background-position: center center;
     }
@@ -333,7 +314,7 @@ label {
     }
     .blue-wrapper {
         width: 947px !important;
-        margin-left: 10em;
+        margin-left: 9m;
     }
     .white-wrapper {
         margin-top: -0.5em !important;
@@ -407,19 +388,47 @@ label {
     }
 }
 
-@media (min-width : 1281px) {
+
+@media (min-width : 375px) {
+     .form-column {
+        margin-top: 2em;
+         max-width: 100%;
+    }
     .fine-print {
-        padding-left: 10em;
-        padding-right: 10em;
+        padding-left: 3em;
+        padding-right: 3em;
         padding-top: 1em;
     }
-    .blue-wrapper {
-        width: 947px !important;
-        margin-left: 10em;
+    h1 {
+        max-width: 375px !important;
+        font-size: 20px !important;
+        text-align: center !important;
+        font-weight: 100 !important;
+        margin-bottom: 2.5em !important;
+        margin-left: 1.25em !important;
     }
-   .white-wrapper {
-        margin-top: -0.5em !important;
-        margin-left: 5em !important;
-        margin-right: 5em !important;
+    h3 {
+        font-size: 10px !important;
+        padding-left: 4em !important;
+        padding-right: 4em !important;
+        padding-bottom: 2em !important;
+        margin-top: 0 !important;
     }
+  p {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+        padding-bottom: 1em;
+        font-size: 12px !important;
+    }
+    .button-submit {
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+    .privacy {
+        clear: left;
+        display: block;
+        margin-left: 2em;
+    }
+    
+}
 }
