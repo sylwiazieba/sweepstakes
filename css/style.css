@@ -23,7 +23,7 @@
 
 .container {
     margin: 0 auto !important;
-    max-width: 847px !important;
+    max-width: 947px !important;
     max-width: 90% !important;
 }
 
@@ -87,7 +87,6 @@ p {
     text-transform: uppercase;
     color: #fff !important;
     font-size: 22px !important;
-    -webkit-appearance: none;
     -webkit-appearance: none;
     font-family: 'Gyre' !important;
     font-weight: normal;
@@ -180,6 +179,7 @@ select {
     -moz-box-shadow: inset 0 0 4px #000000 !important;
     -webkit-box-shadow: inset 0 0 4px #000000 !important;
     box-shadow: inset 0 0 4px #000000 !important;
+    -webkit-appearance: none;
 }
 
 input[type="checkbox"] {
@@ -326,6 +326,7 @@ label {
     input[type="dropdown"],
     select {
         width: 7em !important;
+        -webkit-appearance: none;
     }
     input[type="dropdown"],
     label {
@@ -363,6 +364,7 @@ label {
     input[type="dropdown"],
     select {
         width: 8em !important;
+        -webkit-appearance: none;
     }
     .white-wrapper {
         background-color: #fff;
@@ -423,6 +425,7 @@ label {
     }
     .form-column {
         margin-top: 2em;
+        width: 120%;
     }
     .more-info-link {
         margin-top: 0;
@@ -451,6 +454,7 @@ label {
     input[type="dropdown"],
     select {
         width: 10em !important;
+        -webkit-appearance: none;
     }
 }
 
@@ -464,6 +468,7 @@ label {
     input[type="dropdown"],
     select {
         width: 12em !important;
+        -webkit-appearance: none;
     }
     .white-wrapper {
         background-color: #fff;
@@ -558,6 +563,7 @@ label {
     input[type="dropdown"],
     select {
         width: 14.5em !important;
+        -webkit-appearance: none;
     }
     p {
         padding-left: 1em !important;
@@ -617,6 +623,7 @@ label {
     input[type="dropdown"],
     select {
         width: 15em !important;
+        -webkit-appearance: none;
     }
     p {
         padding-left: 1em !important;
@@ -679,6 +686,7 @@ label {
     input[type="dropdown"],
     select {
         width: 21em !important;
+        -webkit-appearance: none;
     }
     .blue-wrapper {
         width: 947px !important;
@@ -747,6 +755,7 @@ label {
     input[type="dropdown"],
     select {
         width: 24em !important;
+        -webkit-appearance: none;
     }
     .blue-wrapper {
         width: 947px !important;

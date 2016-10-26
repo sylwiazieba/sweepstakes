@@ -1,18 +1,18 @@
-$(function() {
-    
+$(function () {
+
     $.validator.setDefaults({
         errorClass: 'help-block',
-        highlight: function(element) {
+        highlight: function (element) {
             $(element)
-            .closest('.form-group')
-            .addClass('has-error')
+                .closest('.form-group')
+                .addClass('has-error')
         },
-        unhighlight: function(element) {
+        unhighlight: function (element) {
             $(element)
-            .closest('.form-group')
-            .removeClass('has-error')
+                .closest('.form-group')
+                .removeClass('has-error')
         },
-        errorPlacement: function (error,element) {
+        errorPlacement: function (error, element) {
             if (element.prop('type') === 'checkbox') {
                 error.insertAfter(element.parent());
             } else {
@@ -20,28 +20,28 @@ $(function() {
             }
         }
     });
-    
+
     $("#register-form").validate({
         rules: {
             firstName: {
-                required: true, 
+                required: true,
             },
             lastName: {
                 required: true,
             },
-             email: {
-                 required: true,
-                 email: true
+            email: {
+                required: true,
+                email: true
             },
-             birth: {
-                 required: true,
-             },
-             zip: {
-                 required: true,
-             },
-             provider: {
-                 required: true,
-             },
+            birth: {
+                required: true,
+            },
+            zip: {
+                required: true,
+            },
+            provider: {
+                required: true,
+            }
         },
         messages: {
             firstName: {
@@ -51,8 +51,8 @@ $(function() {
                 required: 'Please enter your last name',
             },
             email: {
-                required: 'Please enter an email address.',
-                email: 'Please enter a <em>valid</em> email address.'
+                required: 'Please enter an email address',
+                email: 'Please enter a <em>valid</em> email address'
             },
             zip: {
                 required: 'Please enter your zip code',
