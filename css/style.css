@@ -51,6 +51,7 @@ p {
     background: repeating-linear-gradient(135deg, #3987b0, #3987b0 .015em, #3999cc 0, #3999cc .25em);
     margin-left: auto;
     margin-right: auto;
+    width: 947px !important;
 }
 
 .white-wrapper {
@@ -67,6 +68,24 @@ p {
     margin-right: -5em !important;
     float: none !important;
     display: block !important;
+}
+
+.header {
+    background:url(../images/resort.jpg);
+    background-size: cover !important;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    height: auto;
+    max-width: auto;
+    z-index: 1;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    min-height: 519px;
+    z-index: 900;
 }
 
 h1 {
@@ -275,9 +294,13 @@ label {
 
 
 /*=============Responsive Styles====================*/
-
+@media (min-width:375px) {
+    #header {
+        max-width: 375px;
+    }
+    
 @media (min-width:768px) {
-    #header img {
+    #header {
         align-content: center;
         margin-left: 12.5em !important;
         background-attachment: fixed;
@@ -297,7 +320,7 @@ label {
         font-size: 18px !important;
     }
     .blue-wrapper {
-        width: 947px;
+        width: 947px !important;
         margin-left: 10em;
     }
     .white-wrapper {
